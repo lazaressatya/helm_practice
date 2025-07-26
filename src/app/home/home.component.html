@@ -1,0 +1,30 @@
+<div class="row p-0 m-0 min-vh-100">
+    <div class="col">
+        <app-header></app-header>
+        <div class="container-fluid">
+            <div class="row my-3 ms-5">
+                <div class="col img-maindiv">
+                <img src="https://static.wixstatic.com/media/c837a6_a5f904abc9224779abfc65cb53fa6ba7~mv2.jpg/v1/crop/x_158,y_151,w_1117,h_1117/fill/w_720,h_720,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/gettyimages-1284121212-2048x2048_edited_.jpg" id="img-div" alt="img">
+                </div>
+                <div class="col">
+                    <span class="fe-bold" style="font-size: 100px;">
+                        Hello {{count()}}
+                    </span>
+                    <div class="row">
+                        <button class=" col-3 btn btn-primary" (click)="inc()">INC</button>
+                        <button class="col-3 btn btn-danger" (click)="dec()">DEC</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- <div *ngIf="isshow">
+                <app-contact [userName]="resData"></app-contact>
+            </div> -->
+            
+        </div>
+       
+    </div>
+    <app-footer class="mt-auto"></app-footer>
+</div>
+
+
